@@ -45,4 +45,5 @@ RAM:
 
 Total Installed Memory: 8 GB
 
-Benchmark Results
+Benchmark Results:
+![alt text](Figure_1.png)
