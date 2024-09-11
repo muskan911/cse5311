@@ -1,0 +1,1 @@
+x = f(n) x = 1; y = 1; for i = 1:n for j = 1:n x = x + 1; y = i + j; The line y = i + j is an additional operation inside the inner loop, but it is an 𝑂 ( 1 ) O(1) operation. Thus, it does not change the overall time complexity.Therefore, the runtime would still be 𝑂 ( 𝑛 2 ) O(n2), but the constant factor will increase slightly due to the additional operation.

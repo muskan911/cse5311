@@ -1,0 +1,6 @@
+Part1: The variable x is set to 1 at the start. This takes 1 operation. 
+There are two loops: The outer loop runs 𝑛 n times. 
+For each iteration of the outer loop, the inner loop also runs 𝑛 n times. Inside the inner loop, x = x + 1 is executed once for every pair of 𝑖 i and 𝑗 j, 
+meaning this statement runs 𝑛 × 𝑛 = 𝑛 2 n×n=n2 times. Total operations: The total number of operations is: 𝑇 ( 𝑛 ) = 1 + 𝑛 2 T(n)=1+n^2 As 𝑛 n gets large,
+the 𝑛 2 n2 term is the most important. So, the runtime of this function is 𝑂 ( 𝑛 2 ) O(n2). 
+In simple terms, the function takes about 𝑛 2 n2 steps, where 𝑛 n is the input size.
