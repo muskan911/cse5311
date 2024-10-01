@@ -1,9 +1,5 @@
 import java.util.Random;
 
-import cse5311.BubbleSort;
-import cse5311.InsertionSort;
-import cse5311.SelectionSort;
-
 public class Benchmark {
     public static void main(String[] args) {
         int[] sizes = { 0, 5, 10, 20, 50, 100, 500, 1000, 5000, 10000, 50000 };
