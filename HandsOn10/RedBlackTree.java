@@ -2,12 +2,12 @@ class RedBlackTree {
     class Node {
         int data;
         Node parent, left, right;
-        boolean color; // true for red, false for black
+        boolean color; 
 
         Node(int data) {
             this.data = data;
             left = right = parent = null;
-            this.color = true; // New nodes are initially red
+            this.color = true; 
         }
     }
 
@@ -22,7 +22,6 @@ class RedBlackTree {
         root = TNULL;
     }
 
-    // Left rotate
     private void leftRotate(Node x) {
         Node y = x.right;
         x.right = y.left;
@@ -41,7 +40,6 @@ class RedBlackTree {
         x.parent = y;
     }
 
-    // Right rotate
     private void rightRotate(Node x) {
         Node y = x.left;
         x.left = y.right;
@@ -60,14 +58,13 @@ class RedBlackTree {
         x.parent = y;
     }
 
-    // Insert node
     public void insert(int key) {
         Node node = new Node(key);
         node.parent = null;
         node.data = key;
         node.left = TNULL;
         node.right = TNULL;
-        node.color = true; // New node must be red
+        node.color = true; 
 
         Node y = null;
         Node x = this.root;
@@ -102,7 +99,6 @@ class RedBlackTree {
         fixInsert(node);
     }
 
-    // Fix the red-black tree
     private void fixInsert(Node k) {
         Node u;
         while (k.parent.color == true) {

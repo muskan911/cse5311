@@ -1,5 +1,3 @@
-package HandsOn10;
-
 class BST {
     class Node {
         int data;
@@ -17,7 +15,6 @@ class BST {
         root = null;
     }
 
-    // Insert a node
     void insert(int key) {
         root = insertRec(root, key);
     }
@@ -34,7 +31,6 @@ class BST {
         return root;
     }
 
-    // Delete a node
     void delete(int key) {
         root = deleteRec(root, key);
     }
@@ -68,7 +64,6 @@ class BST {
         return minv;
     }
 
-    // Search a node
     boolean search(int key) {
         return searchRec(root, key);
     }
@@ -81,7 +76,6 @@ class BST {
         return key < root.data ? searchRec(root.left, key) : searchRec(root.right, key);
     }
 
-    // In-order traversal
     void inorder() {
         inorderRec(root);
     }
